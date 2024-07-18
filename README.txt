@@ -13,3 +13,30 @@ Parametri:
 	-s  Ignora l'errore di confronto sullo stesso server.
 	-V  Visualizza la versione del programma.
 
+--------------------------------------------------------------------------------
+Esempio del file di configurazione:
+Trattasi di un file .ini
+
+[db]
+db=nomeDatabase
+mysql=127.0.0.1
+dblog=login
+dbpas=password
+charset=codifica
+
+Esempio:
+
+[db]
+db=database
+mysql=127.0.0.1
+dblog=root
+dbpas=lamer
+charset=utf8mb4
+
+--------------------------------------------------------------------------------
+Il programma genera un file di output a cui potete mettere come estensione ad
+esempio ".dbcmp"
+
+Dopo occorrerà fare un confronto dei due file con lo stesso comando.
+Il risultato sarà un file di testo riassuntivo con le differenze tra i due db.
+Codifica UTF-8.
